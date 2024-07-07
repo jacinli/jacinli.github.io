@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FastApi+WebSocket 解析
+title: "FastApi+WebSocket 解析"
 date: 2024-07-07
 description: "FastApi+WebSocket 解析"
 tag: python
