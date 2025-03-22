@@ -3,7 +3,7 @@ layout: post
 title: "SSE流式fastapi"
 date: 2025-01-02
 description: "SSE流式fastapi"
-tag: python
+tag: fastapi
 ---   
 
 # 介绍
