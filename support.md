@@ -8,7 +8,7 @@ title: 技术支持
 ---
 
 📮 **联系邮箱**：  
-jackleo120ch@gmail.com  
+poplar_ripest80@icloud.com  
 我会在看到邮件后第一时间回复。
 
 📦 **Github**：  
