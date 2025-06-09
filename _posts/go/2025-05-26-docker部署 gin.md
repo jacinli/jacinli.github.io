@@ -2,9 +2,7 @@
 layout: post
 title: "docker部署 gin"
 date: 2025-05-26
-description: "Go语言部署优势与Docker实践
-Go语言采用静态编译技术，直接将源代码编译为原生二进制可执行文件（ELF/Mach-O/PE格式），无需依赖运行时环境。通过go build命令生成的自包含二进制文件包含所有标准库和依赖，实现"一次编译，随处运行"的部署优势。相较于C/C++，Go具有更强的跨平台编译能力、更完善的标准库和更安全的并发模型。
-在Docker部署中，采用多阶段构建策略：使用golang:alpine镜像编译生成二进制文件，然后以仅5MB的alpine基础镜像作为运行环境，最终镜像仅包含编译好的二进制文件和必要配置。这种方案结合了Go的编译优势与Alpine镜像的轻量特性，实现高效安全的容器化部署。"
+description: "docker部署 gin"
 tag: go
 ---   
 
