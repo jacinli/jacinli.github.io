@@ -10,17 +10,7 @@ module.exports = {
         href: "https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250803191554812.jpeg",
       },
     ],
-    [
-      "script",
-      {},
-      `var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?3cd236a05c52c534bbcc794ec45f52a3";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();`,
-    ],
+
   ],
   base: "/",
   serviceWorker: true,
