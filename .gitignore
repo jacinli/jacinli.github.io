@@ -1,6 +1,11 @@
+./package-lock.json
+/node_modules
+/docs/.vuepress/dist
+/docs/.vuepress/.cache
+/docs/.vuepress/.temp
+*.arr
+*.zip
+*.temp
+*.pack
 .idea/
 .vscode/
-.DS_Store
-.venv/
-.env
-.env.local
