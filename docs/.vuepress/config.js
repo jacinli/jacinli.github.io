@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Jacin的博客",
+  title: "Jacin   ME",
   description: "AI 开发",
   keywords: "后端开发",
   head: [
