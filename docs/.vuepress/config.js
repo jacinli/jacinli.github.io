@@ -7,7 +7,7 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "/img/logo.ico",
+        href: "https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250803191554812.jpeg",
       },
     ],
     [
