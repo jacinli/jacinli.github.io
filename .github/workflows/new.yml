@@ -63,11 +63,9 @@ jobs:
         run: |
             echo "🔐 SSH 连接到远程服务器，准备部署..."
   
-            sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_PORD_IP }} << EOF
-              echo "🚀 已进入服务器，开始更新服务..."
-  
-              cd /root/blog/
-              bash up.sh
-  
-              echo "✅ 博客更新完成！"
+            sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no -p "${{ secrets.SERVER_PORT }}" "${{ secrets.SERVER_USER }}"@"${{ secrets.SERVER_PROD_IP }}" <<'EOF'
+                echo "🚀 已进入服务器，开始更新服务..."
+                cd /root/blog/
+                bash up.sh
+                echo "✅ 博客更新完成！"
             EOF
