@@ -1,12 +1,3 @@
----
-layout: post
-title: "CORS与OPTIONS请求"
-date: 2025-03-10
-description: "CORS与OPTIONS请求,CORS,OPTIONS,跨域,跨域资源共享"
-tag: 网络
----
-
-
 # CORS
 
 **🔥 什么是 CORS（跨域资源共享）？**

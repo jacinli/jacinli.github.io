@@ -1,11 +1,3 @@
----
-layout: post
-title: "SSE流式fastapi"
-date: 2025-01-02
-description: "SSE流式fastapi"
-tag: fastapi
----   
-
 # 介绍
 
 SSE（Server-Sent Events）是一种 **服务器主动向客户端“推送”数据的技术**，特别适合用来实现像 GPT 这种「流式输出」的效果。

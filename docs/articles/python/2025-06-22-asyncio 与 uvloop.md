@@ -1,11 +1,3 @@
----
-layout: post
-title: "asyncio 与 uvloop"
-date: 2025-06-22
-description: "asyncio 与 uvloop"
-tag: python
----
-
 # 事件循环
 
 **事件循环 = 协调所有协程执行的中央调度器，它通过非阻塞机制，实现并发执行多个异步任务。**

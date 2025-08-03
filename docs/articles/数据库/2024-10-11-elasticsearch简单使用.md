@@ -1,11 +1,3 @@
----
-layout: post
-title: "ElasticSearch 简单使用"
-date: 2024-10-11
-description: "ElasticSearch的安装说明、介绍与简单使用。"
-tag: 数据库
----  
-
 ElasticSearch的安装说明、介绍与简单使用。
 # 安装说明
 

@@ -1,11 +1,3 @@
----
-layout: post
-title: "从 Alpha 到 Final：Python 各阶段版本到底该怎么用？"
-date: 2025-06-12
-description: "从 Alpha 到 Final：Python 各阶段版本到底该怎么用？"
-tag: python
----
-
 **主流的 Python 是由Python Software Foundation（PSF，Python 软件基金会）主导的：**
 
 - PSF 是一个 **非营利组织**

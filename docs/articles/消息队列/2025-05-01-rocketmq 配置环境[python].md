@@ -1,12 +1,3 @@
----
-layout: post
-title: "rocketmq 环境配置[python]"
-date: 2025-05-01
-description: "rocketmq 环境配置[python]"
-tag: 消息队列
----   
-
-
 # M1 芯片 本地运行 rocketmq
 
 rocketmq Python 开源地址：

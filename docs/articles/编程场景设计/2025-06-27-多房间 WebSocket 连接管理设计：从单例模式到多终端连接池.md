@@ -1,12 +1,3 @@
----
-layout: post
-title: "多房间 WebSocket 连接管理设计：从单例模式到多终端连接池"
-date: 2025-06-27
-description: "多房间 WebSocket 连接管理设计：从单例模式到多终端连接池"
-tag: 编程场景设计
----
-
-
 本篇 主要聚焦于单机单 worker 部署的 ws 管理
 
 场景在于 直播弹幕、实时通知等场景。

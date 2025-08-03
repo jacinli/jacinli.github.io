@@ -1,11 +1,3 @@
----
-layout: post
-title: "docker部署 gin"
-date: 2025-05-26
-description: "docker部署 gin"
-tag: go
----   
-
 # 编译与执行
 
 > ✅「静态编译语言 + 生成原生二进制文件 + 操作系统直接执行」

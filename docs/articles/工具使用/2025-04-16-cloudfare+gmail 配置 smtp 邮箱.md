@@ -1,12 +1,3 @@
----
-layout: post
-title: "cloudfare+gmail 配置 smtp 邮箱"
-date: 2025-04-16
-description: "cloudfare+gmail 配置 smtp 邮箱"
-tag: 工具使用
----
-
-
 这里介绍有一个域名后，不需要服务器，就可以实现 cloudfare+ gmail 的 邮箱收发。
 
 为什么还需要 gmail 的 smtp 功能，因为 cloudfare 默认只是对 email 进行转发，就是只能收邮件而不能发送邮件，故使用 gmail 的功能来进行代理 发送。

@@ -1,11 +1,3 @@
----
-layout: post
-title: "go channel 用法"
-date: 2025-06-03
-description: "go channel 用法"
-tag: go
----   
-
 # 介绍
 
 **channel** 在 Go 中是一种**专门用来在 goroutine 之间传递数据**的**类型安全的管道**。

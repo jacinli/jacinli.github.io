@@ -1,11 +1,3 @@
----
-layout: post
-title: "FastApi+WebSocket 解析"
-date: 2024-07-07
-description: "FastApi+WebSocket 解析"
-tag: python
----   
-
 FastAPI 比较简单，就是加一个路由装饰器就可以运行函数了，一般来说是结合async来进行异步编程，同时结合websocket来使用。
 
 # 特点

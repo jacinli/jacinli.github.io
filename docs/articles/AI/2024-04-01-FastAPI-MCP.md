@@ -1,12 +1,3 @@
----
-layout: post
-title: "FastAPI-MCP"
-date: 2025-04-01
-description: "FastAPI-MCP解析说明"
-tag: AI
----   
-
-
 # 介绍
 
 开源地址： https://github.com/tadata-org/fastapi_mcp
