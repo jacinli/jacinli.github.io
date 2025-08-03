@@ -9,3 +9,5 @@
 *.pack
 .idea/
 .vscode/
+*.log
+docs/.vuepress/dist
