@@ -366,6 +366,10 @@ module.exports = {
           "link": "/articles/网络/",
           "children": [
             {
+              "text":"cloudflare证书",
+              "link": "/articles/网络/cloudflare证书.md"
+            },
+            {
               "text": "网络https协议",
               "link": "/articles/网络/2025-01-09-网络https协议.md"
             },
