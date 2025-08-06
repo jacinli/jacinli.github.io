@@ -1,6 +1,7 @@
+# 目录
+[[toc]]
 
-
-# 介绍
+## 介绍
 
 **🧠 Langfuse 是什么？**
 
@@ -35,7 +36,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250323234357046.png)
 
-# 使用
+## 使用
 
 注册langfuse类
 
@@ -124,7 +125,7 @@ async def gpt_stream_with_langfuse(self, user_message: str, model: str = None, h
 | name | 这条 trace 的名称（可在 Langfuse UI 中看到，例如 gpt_stream） |
 | user_id | 用户 ID，用于后续用户行为归因、分析（比如标记为匿名用户 user-123） |
 
-## Trace
+### Trace
 
 Trace 是一个“顶层调用上下文”，可以理解为：
 
@@ -152,7 +153,7 @@ Trace 是一个“顶层调用上下文”，可以理解为：
 
 •	获取 Langchain 回调器（如果用 Langchain）
 
-## Span
+### Span
 
 创建一个 **Span 子操作**，用于追踪 Trace 内部的一个子任务/子步骤。
 
