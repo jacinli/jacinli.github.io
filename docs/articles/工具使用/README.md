@@ -1,8 +1,12 @@
-# 工具使用
+# 目录
+
+[[toc]]
+
+## 工具使用
 
 这里收录了关于各种开发工具的使用教程，包括 PicGo、Cloudflare、Docker 等。
 
-## 文章列表
+### 文章列表
 
 - [PicGo 配置](/articles/工具使用/2025-01-11-picgo配置.md)
 - [Cloudflare 配置内网穿透](/articles/工具使用/2025-01-12-cloudfare配置内网穿透.md)

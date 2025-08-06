@@ -1,4 +1,8 @@
-# AI 技术博客
+# 目录
+
+[[toc]]
+
+## AI 技术博客
 
 这里收录了关于 AI 技术的文章，包括：
 
@@ -8,7 +12,7 @@
 - Langfuse 追踪
 - 流式解析技术
 
-## 文章列表
+### 文章列表
 
 - [Autogen参数说明](/articles/AI/2025-03-28-Autogen参数说明.md)
 - [FastAPI-MCP](/articles/AI/2024-04-01-FastAPI-MCP.md)

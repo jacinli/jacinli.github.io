@@ -1,3 +1,7 @@
+# 目录
+
+[[toc]]
+
 **主流的 Python 是由Python Software Foundation（PSF，Python 软件基金会）主导的：**
 
 - PSF 是一个 **非营利组织**
@@ -9,7 +13,7 @@
 
 **Python 的版本阶段（版本周期）**。这些阶段是官方正式定义的，适用于每一个 Python 主版本（比如 3.12、3.13、3.14…）
 
-## **🧠 Python 版本的四大阶段**
+### **🧠 Python 版本的四大阶段**
 
 Python 每个主版本都会经历以下 **四个阶段**：
 
@@ -31,7 +35,7 @@ Python 每个主版本都会经历以下 **四个阶段**：
 
 Python 的版本发布遵循严格流程，分为 Alpha → Beta → RC → Final 四阶段，**每个阶段都服务于不同人群和用途**，对开发者来说，掌握这些区别有助于正确选版本、规避升级风险。
 
-## **🛡️ 关于 GIL 的大变化**
+### **🛡️ 关于 GIL 的大变化**
 
 - **Python 3.12**：实现子解释器独立 GIL（PEP 684），C‑API 支持，暂未开放全局线程并行
 - **Python 3.13**：实验证明可构建“无 GIL”版本（PEP 703），但仍需自行构建开启
@@ -40,7 +44,7 @@ Python 的版本发布遵循严格流程，分为 Alpha → Beta → RC → Fina
 - **3.13 实验性开启无 GIL 构建**
 - **3.14 正式推进无 GIL + 多解释器支持**
 
-# Cpython
+## Cpython
 
 CPython 的 C 源码（例如 ceval.c, listobject.c, dictobject.c）**并不会出现在 .venv/ 中**，因为：
 

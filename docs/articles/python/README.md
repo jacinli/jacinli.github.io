@@ -1,4 +1,8 @@
-# Python 开发
+# 目录
+
+[[toc]]
+
+## Python 开发
 
 这里收录了关于 Python 开发的文章，包括：
 
@@ -8,7 +12,7 @@
 - 测试和调试
 - 性能优化
 
-## 文章列表
+### 文章列表
 
 - [Python Import 解析](/articles/python/2024-06-23-pythonImport解析.md)
 - [FastAPI + WebSocket 解析](/articles/python/2024-07-07-FastApi+WebSocket解析.md)

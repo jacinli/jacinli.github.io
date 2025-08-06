@@ -1,4 +1,8 @@
-# 介绍
+# 目录
+
+[[toc]]
+
+## 介绍
 
 SSE（Server-Sent Events）是一种 **服务器主动向客户端“推送”数据的技术**，特别适合用来实现像 GPT 这种「流式输出」的效果。
 
@@ -32,7 +36,7 @@ data: 这是第二条消息
 data: {"event": "update", "msg": "更新成功"}
 ```
 
-# 实现
+## 实现
 
 使用fastapi 非常容易实现
 
@@ -138,7 +142,7 @@ async def root(request: Request):
     return r
 ```
 
-# 一些思考
+## 一些思考
 
 - “**StreamingResponse 内部是如何 send() 的？**”
     

@@ -1,8 +1,12 @@
-# 数据库
+# 目录
+
+[[toc]]
+
+## 数据库
 
 这里收录了关于数据库技术的文章，包括 MySQL、Redis、Elasticsearch 等内容。
 
-## 文章列表
+### 文章列表
 
 - [Alembic 使用](/articles/数据库/2024-09-30-Alembic使用.md)
 - [Redis 简单的消息队列](/articles/数据库/2024-09-30-Redis简单的消息队列.md)

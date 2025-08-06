@@ -1,4 +1,8 @@
-# 事件循环
+# 目录
+
+[[toc]]
+
+## 事件循环
 
 **事件循环 = 协调所有协程执行的中央调度器，它通过非阻塞机制，实现并发执行多个异步任务。**
 
@@ -36,7 +40,7 @@ loop.run_until_complete()
 - Web 框架（FastAPI、Sanic）
 - 实时任务调度系统（如定时器、爬虫）
 
-# asyncio
+## asyncio
 
 asyncio 是 Python 3.4 引入的标准库，**用于编写协程式的异步代码**。它的核心包括：
 
@@ -48,17 +52,17 @@ asyncio 是 Python 3.4 引入的标准库，**用于编写协程式的异步代�
 
 **本质：asyncio 提供了一个异步框架，用于非阻塞的 I/O 编程。**
 
-# **uvloop**
+## **uvloop**
 
 uvloop 是一个用 **Cython** 编写的 **高性能事件循环实现**，替代默认的 asyncio 事件循环。它基于 [libuv](https://github.com/libuv/libuv)（Node.js 的底层库），因此性能极佳。
 
-### **特点：**
+#### **特点：**
 
 - 全兼容 asyncio 接口
 - 性能提升 2~4 倍（实际测试中）
 - 安装简单，几乎无缝切换
 
-# 比较
+## 比较
 
 **uvloop 比默认 asyncio 更快，本质原因在于事件循环的底层实现完全不同：uvloop 用 C/Cython 构建并基于 libuv，而默认 asyncio 用纯 Python 和 selectors 实现，性能存在数量级差异。**
 

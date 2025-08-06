@@ -1,4 +1,8 @@
-# 边缘证书(**Edge Certificate)**
+# 目录
+
+[[toc]]
+
+## 边缘证书(**Edge Certificate)**
 
 **边缘证书**是部署在 CDN 边缘节点上的 TLS/SSL 证书，用来加密客户端（用户浏览器）和 CDN 之间的通信。因为 CDN 把流量“缓存/加速”放在离用户最近的节点，这些节点就是所谓的“边缘”（Edge），所以证书也在这些边缘节点上终端 TLS 握手，故名 **Edge Certificate**。
 
@@ -53,7 +57,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250804212227991.png)
 
-# 源站证书
+## 源站证书
 
 - **位置：** 安装在你自己的源服务器上（你在 Cloudflare 仪表盘生成的那个 “Cloudflare Origin Certificate”）。
 - **作用：** Cloudflare 与你的源站之间建立 HTTPS（即 Cloudflare 访问你的服务器时用 HTTPS），只要你在 Cloudflare 上设置了 SSL 为 “Full (strict)” 就会验证这个证书。
@@ -67,7 +71,7 @@ Cloudflare 边缘
    ↓ HTTPS (验证) → Origin Server（用 Origin Certificate 提供）
 ```
 
-# **客户端证书(Client Certificate / mTLS)**
+## **客户端证书(Client Certificate / mTLS)**
 
 **A.Authenticated Origin Pulls**
 
@@ -95,7 +99,7 @@ if ($ssl_client_verify != SUCCESS) {
 - **作用：** 要求访问你某些路径的客户端必须提供有效的客户端证书（双向 TLS），未经授权的请求被拒。
 - **用例：** 管理后台、内部 API、限定访问的接口，比 token 更安全。
 
-# 联系
+## 联系
 
 | **方向/用途** | **证书是谁出** | **谁验证** | **作用** |
 | --- | --- | --- | --- |

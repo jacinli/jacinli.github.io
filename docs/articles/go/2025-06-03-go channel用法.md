@@ -1,4 +1,8 @@
-# 介绍
+# 目录
+
+[[toc]]
+
+## 介绍
 
 **channel** 在 Go 中是一种**专门用来在 goroutine 之间传递数据**的**类型安全的管道**。
 
@@ -13,7 +17,7 @@ Go 语言采用 **CSP（Communicating Sequential Processes）** 模型，也就�
 
 也就是通过 channel 来传递数据，而不是多个 goroutine 同时操作一份共享数据，这样能减少复杂的锁。
 
-## **🧬 channel 的关键特性**
+### **🧬 channel 的关键特性**
 
 ✅ **类型化**：
 
@@ -34,13 +38,13 @@ Go 语言采用 **CSP（Communicating Sequential Processes）** 模型，也就�
 
 当通道关闭（close(ch)）后再接收，不会再阻塞，而是返回对应类型的零值和一个标志。
 
-## **🎨 实际用法场景**
+### **🎨 实际用法场景**
 
 - **任务分发**：生产者 goroutine 往通道里传任务，消费者 goroutine 从通道取任务。
 - **信号通知**：用通道只传递空 struct 来通知某个 goroutine 开始或结束工作。
 - **并发控制**：限制 goroutine 数量，比如用缓冲通道当作信号量。
 
-# go func()
+## go func()
 
 ```jsx
 go func() {
@@ -111,7 +115,7 @@ ch <- "Hello"
 > 也可以用缓冲通道，这样中间能暂存数据，就不用 goroutine。
 > 
 
-# **无缓冲通道 vs 缓冲通道**
+## **无缓冲通道 vs 缓冲通道**
 
 | **类别** | **定义** | **行为** |
 | --- | --- | --- |
@@ -150,7 +154,7 @@ msg := <-channel
 > 🔥 有缓冲通道：通道能先存东西，不必马上接收，所以可以顺利执行完发送，不用 goroutine。
 > 
 
-# **普通 int 变量与 channel 的区别**
+## **普通 int 变量与 channel 的区别**
 
 | **对比点** | **普通** int **变量** | chan int **通道** |
 | --- | --- | --- |

@@ -1,6 +1,10 @@
+# 目录
+
+[[toc]]
+
 目录
 
-# module与package
+## module与package
 模块（module）
 模块与包的关系，可以类比文件和目录，模块就是文件。
 Python 文档中这样描述，**一个 Python 文件就是一个模块**，Python 的文件名（不带后缀.py）就是模块名。
@@ -12,7 +16,7 @@ package 里面可以有 module，也可以有子包（sub-package）。一个模
 
 一个基本的 package 可以包含 sub-package、modules、__init__.py(Python 3.3 之后非必需)、setup.py。
 
-# import 
+## import 
 当 import 机制被触发时，Python 首先会去 sys.modules 中查找该模块是否已经被引入过，如果该模块已经被引入了，就直接调用它，否则再进行下一步。这里 sys.modules 可以看做是一个缓存容器。值得注意的是，如果 sys.modules 中对应的值是 None 那么就会抛出一个 ModuleNotFoundError 异常。
 
 ```python
@@ -40,7 +44,7 @@ print(sys.path)
 基于路径的模块查找器。
 
 
-# 相对路径与绝对路径
+## 相对路径与绝对路径
 通过绝对路径引用模块，容易造成在后续改变代码结构，或者文件改名时，修改工作多的问题。而相对路径没有这个问题。
 绝对路径引用，因为它们从项目根目录下的包开始导入。
 使用 python -m 命令加上模块的完整路径来运行,把xxx.py文件当做模块启动.
@@ -65,7 +69,7 @@ test_import_project git:(master) ✗ python -m run.py
 
 相对导入可以避免硬编码带来的维护问题，例如我们改了某一顶层包的名，那么其子包所有的导入就都不能用了。
 
-# requiremets.txt
+## requiremets.txt
 
 ```python
 pip install requests

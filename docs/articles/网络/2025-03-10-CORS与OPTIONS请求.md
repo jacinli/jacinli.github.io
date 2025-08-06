@@ -1,4 +1,8 @@
-# CORS
+# 目录
+
+[[toc]]
+
+## CORS
 
 **🔥 什么是 CORS（跨域资源共享）？**
 
@@ -37,7 +41,7 @@
 
 •	🧠 **不符合就被浏览器“截胡”** —— 返回内容根本到不了 JS 层！
 
-# OPTIONS 请求
+## OPTIONS 请求
 
 **🌐 什么是 OPTIONS 请求？**
 
@@ -87,7 +91,7 @@ access-control-allow-credentials	tru
 | Access-Control-Allow-Methods | 允许哪些请求方法（如 POST、GET） |
 | Access-Control-Allow-Headers | 允许携带哪些自定义 header |
 
-# 有**CORSMiddleware还是405？**
+## 有**CORSMiddleware还是405？**
 
 FastAPI 的 CORSMiddleware **是中间件**，它确实会拦截跨域的 OPTIONS 请求并**提前响应**，但是这个行为**只在请求包含 Origin 头时才生效**！
 
@@ -129,7 +133,7 @@ curl -X OPTIONS http://:/api/json_config \
 | 请求带 Origin | ✅ 会触发 CORSMiddleware 自动响应 |
 | 没有注册 OPTIONS | ❌ 会 405，浏览器拦截 |
 
-# 浏览器预检流程
+## 浏览器预检流程
 
 **🌐 浏览器中的 CORS 预检流程（Preflight Request）**
 

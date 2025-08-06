@@ -1,4 +1,8 @@
-# 注册cloudfare
+# 目录
+
+[[toc]]
+
+## 注册cloudfare
 
 注册cf后需要绑定自己的域名后，可以实现更多的功能
 
@@ -32,7 +36,7 @@
 
 Cloudflare 并不像其他平台要求你添加 TXT 验证记录，它是 **通过你是否成功更换 NS 到他们那边** 来确认你是该域名的管理员。
 
-# 实现**内网穿透**
+## 实现**内网穿透**
 
 Cloudflare 提供了一个叫做 **Cloudflare Tunnel（原名 Argo Tunnel）** 的服务，可以让你将本地服务暴露到公网，无需公网 IP，也不用配置路由器端口映射。
 
@@ -61,7 +65,7 @@ If you wish to copy your credentials to a server, they have been saved to:
 /Users/jacinlee/.cloudflared/cert.pem
 ```
 
-## 创建Tunnel
+### 创建Tunnel
 
 这会创建一个 tunnel 并生成对应的 tunnel ID 和本地配置文件。
 
@@ -214,7 +218,7 @@ INF Registered tunnel connection connIndex=0 ... protocol=http2
 cloudflared tunnel run mac-tunnel --protocol http2
 ```
 
-# 
+## 
 
 > Cloudflare Tunnel 成功运行了，但你本地的服务（比如 localhost:8000）没有运行，或者被关闭了。
 > 
