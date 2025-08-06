@@ -15,6 +15,7 @@ module.exports = {
   base: "/",
   serviceWorker: true,
   themeConfig: {
+    sidebar: 'auto',
     sidebarDepth: 3,
     lastUpdatedText: "上次更新",
     navbar: [
@@ -25,6 +26,10 @@ module.exports = {
       {
         text: "技术文章",
         link: "/articles/",
+      },
+      {
+        text: "AI",
+        link: "/AI/",
       },
       {
         text: "关于",
@@ -46,37 +51,46 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/articles/": [
+      "/AI/": [
         {
-          "text": "AI",
-          "link": "/articles/AI/",
+          "text":"前沿技术",
+          "link": "/AI/前沿技术/",
           "children": [
             {
-              "text": "FastAPI-MCP",
-              "link": "/articles/AI/2024-04-01-FastAPI-MCP.md"
+              "text":"FastAPI-MCP",
+              "link": "/AI/前沿技术/FastAPI-MCP.md"
             },
             {
-              "text": "openai流式解析",
-              "link": "/articles/AI/2025-01-01-openai流式解析.md"
+              "text":"langfuse追踪Trace",
+              "link": "/AI/前沿技术/langfuse追踪Trace.md"
             },
             {
-              "text": "langfuse追踪Trace",
-              "link": "/articles/AI/2025-01-20-langfuse追踪Trace.md"
-            },
-            {
-              "text": "openai工具调用",
-              "link": "/articles/AI/2025-01-20-openai工具调用.md"
-            },
-            {
-              "text": "Autogen参数说明",
-              "link": "/articles/AI/2025-03-28-Autogen参数说明.md"
-            },
-            {
-              "text": "README",
-              "link": "/articles/AI/README.md"
+              "text":"多agent框架Autogen参数说明.md",
+              "link": "/AI/前沿技术/多agent框架Autogen参数说明.md"
             }
           ]
         },
+        {
+          "text": "OpenAI",
+          "link": "/AI/openai/",
+          "children": [
+            {
+              "text": "202508-GPT模型选择与降智测试",
+              "link": "/AI/openai/202508-GPT模型选择与降智测试.md"
+            },
+            {
+              "text":"openai工具调用",
+              "link": "/AI/openai/openai工具调用.md"
+            },
+            {
+              "text":"openai流式解析",
+              "link": "/AI/openai/openai流式解析.md"
+            }
+          ]
+        }
+      ],
+      "/articles/": [
+        
         {
           "text": "Git",
           "link": "/articles/Git/",
