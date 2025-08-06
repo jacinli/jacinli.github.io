@@ -14,6 +14,21 @@ module.exports = {
   ],
   base: "/",
   serviceWorker: true,
+  markdown: {
+    extendMarkdown: md => {
+      // 1. 标题打锚点
+      md.use(require('markdown-it-anchor'), { permalink: false });
+      // 2. 新的 TOC 插件，忽略容器深度，直接收集 1–3 级标题
+      md.use(require('markdown-it-toc-done-right'), {
+        // 收集哪几级标题
+        level: [1, 2, 3],
+        // 插入点标记，保持 [[toc]]
+        placeholder: '[[toc]]',
+        // 可选：渲染成 ul 还是 ol
+        listType: 'ul',
+      });
+    },
+  },
   themeConfig: {
     sidebar: 'auto',
     sidebarDepth: 3,

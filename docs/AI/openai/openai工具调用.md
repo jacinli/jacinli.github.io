@@ -1,4 +1,9 @@
-# 工作流程
+
+# 目录
+[[toc]]
+
+
+## 工作流程
 
 **第 1 步：调用模型，传入工具列表**
 
@@ -30,7 +35,7 @@ OpenAI：
 | 第3步 | 你 ➜ GPT | 把工具调用结果补充进 messages，再发回去 |
 | 第4步 | GPT ➜ 你 | GPT 根据函数结果生成自然语言响应 |
 
-# 使用
+## 使用
 
 定义一个function的数组list ，格式如下，name就是对应的函数名称
 
@@ -140,7 +145,7 @@ class AsyncOpenAIOut:
                 yield choice.message.content
 ```
 
-# 基类封装
+## 基类封装
 
 ```python
 import inspect

@@ -2342,6 +2342,11 @@ markdown-it-anchor@^8.1.2:
   resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-8.3.0.tgz#9e1a71766f778c382e5b6d3808d8c4d3a3b4ae30"
   integrity sha512-YXMxKqZDH/MM/sFBZe+JQ/XFa7i8mIWZYkcY7jCGmpNNqcj2iS9Wyxy5devkUoL14NJOUt5IleD99D8StAwkXg==
 
+markdown-it-anchor@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.npmmirror.com/markdown-it-anchor/-/markdown-it-anchor-9.2.0.tgz#89375d9a2a79336403ab7c4fd36b1965cc45e5c8"
+  integrity sha512-sa2ErMQ6kKOA4l31gLGYliFQrMKkqSO0ZJgGhDHKijPf0pNFM9vghjAh3gn26pS4JDRs7Iwa9S36gxm3vgZTzg==
+
 markdown-it-container@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-container/-/markdown-it-container-3.0.0.tgz#1d19b06040a020f9a827577bb7dbf67aa5de9a5b"
@@ -2351,6 +2356,16 @@ markdown-it-emoji@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-emoji/-/markdown-it-emoji-2.0.0.tgz#3164ad4c009efd946e98274f7562ad611089a231"
   integrity sha512-39j7/9vP/CPCKbEI44oV8yoPJTpvfeReTn/COgRhSpNrjWF3PfP/JUxxB0hxV6ynOY8KH8Y8aX9NMDdo6z+6YQ==
+
+markdown-it-table-of-contents@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.npmmirror.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.9.0.tgz#03d076826db037a437dd8afa968c9074904280f4"
+  integrity sha512-PKtgvLweW/PXj8Pg2EfJM9qANbYqchxOiZy+70kLKFfCL4IkdlMzc53Z4Yj2ABw45MEzrXUSHh+4Cs2tDjwEig==
+
+markdown-it-toc-done-right@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.npmmirror.com/markdown-it-toc-done-right/-/markdown-it-toc-done-right-4.2.0.tgz#3ccdce22d5022ffae7b991d07261b1b1de5459d0"
+  integrity sha512-UB/IbzjWazwTlNAX0pvWNlJS8NKsOQ4syrXZQ/C72j+jirrsjVRT627lCaylrKJFBQWfRsPmIVQie8x38DEhAQ==
 
 markdown-it@^12.2.0:
   version "12.2.0"

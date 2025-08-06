@@ -1,10 +1,11 @@
 
-
+# 目录
+[[toc]]
 
 
 ![](https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250413225016817.png)
 
-# UserProxyAgent用户
+## UserProxyAgent用户
 
 user_proxy = UserProxyAgent配置说明：
 
@@ -29,7 +30,7 @@ def __init__(
 
 重要参数说明：
 
-## human_input_mode
+### human_input_mode
 
 三种形式的说明：
 
@@ -43,7 +44,7 @@ def __init__(
 
 当 max_consecutive_auto_reply为0 的时候并且输入模式为TERMINATE的时候，get_human_input会被重写，否则不会被重写。
 
-## is_termination_msg
+### is_termination_msg
 
 参数：
 
@@ -58,7 +59,7 @@ is_termination_msg 是一个函数，它接受一个字典形式的消息作为�
 
 ```
 
-## code_execution_config
+### code_execution_config
 
 是一个字典或者布尔值，用于配置代码执行的相关设置。如果你想禁用代码执行，可以将其设置为 False。否则，你可以提供一个字典，其中包含以下键：
 
@@ -70,7 +71,7 @@ last_n_messages（实验性的，可选，整数）：用于代码执行的回�
 
 ```
 
-## llm_config
+### llm_config
 
 这决定了 `ConversableAgent` 中反馈是通过 `OpenAIWrapper` 进行处理还是不进行任何 LLM 基础的回复处理。
 
@@ -85,7 +86,7 @@ last_n_messages（实验性的，可选，整数）：用于代码执行的回�
 
 https://microsoft.github.io/autogen/docs/reference/oai/client/#create
 
-# AssistantAgent代理
+## AssistantAgent代理
 
 构造参数：
 
@@ -104,7 +105,7 @@ def __init__(
 
 ```
 
-## llm_config
+### llm_config
 
 样式构造：
 
@@ -128,7 +129,7 @@ llm_config={
 
 ```
 
-## max_consecutive_auto_reply
+### max_consecutive_auto_reply
 
 ```
 默认值为 None，这意味着没有提供限制，此时将使用类属性 MAX_CONSECUTIVE_AUTO_REPLY 作为限制。
@@ -138,7 +139,7 @@ llm_config={
 
 ```
 
-# GroupChat群聊
+## GroupChat群聊
 
 类的构造参数：
 
@@ -157,11 +158,11 @@ send_introductions: bool = False # 可配置history 内容
 
 ```
 
-## messages
+### messages
 
 messages属性是一个列表，用于存储群聊中的所有消息。每个消息都是一个字典，包含了消息的相关信息。  当一个新的消息被添加到群聊中时，它会被添加到messages列表的末尾。这个列表可以用来跟踪群聊的历史记录，包括每个参与者发送的所有消息。  例如，当一个代理（Agent）在群聊中发言时，它的发言会被添加到messages列表中。这样，其他的代理就可以查看这个列表，了解群聊的历史记录，以便做出相应的回应。
 
-## speaker_selection_method
+### speaker_selection_method
 
 ```
 def custom_speaker_selection_func(
@@ -189,7 +190,7 @@ def custom_speaker_selection_func(
 
 None，这将优雅地终止对话。
 
-# GroupChatManager管理者
+## GroupChatManager管理者
 
 构造参数：
 
@@ -207,7 +208,7 @@ def __init__(
 
 ```
 
-## 【OLD】发送历史信息【请使用resuming新特性】
+### 【OLD】发送历史信息【请使用resuming新特性】
 
 使用GroupChat，需要在user_proxy.initiate_chat之前发送历史消息：
 
@@ -225,7 +226,7 @@ userproxy.send(msg["content"], recipient=assistant, request_reply=False, silent=
 
 为什么GroupChat是这个流程？因为这样提前发送的信息是manager作为发送方，assistant作为接收方，满足GroupChat的轮对话的过程，但请注意需要把content作为陈述句发送给assistant,否则新一次回答后会再次回复历史信息的问题。
 
-## Resuming GroupChat (新特性)
+### Resuming GroupChat (新特性)
 
 本特性目前只在github开源版本有【0531 pip包已更新】，需要自己下载或者更新最新版本导包(pyautogen版本0.28）
 
@@ -309,7 +310,7 @@ result = last_agent.initiate_chat(recipient=manager,message=last_message,clear_h
 
 ```
 
-## llm_config
+### llm_config
 
 在manager的配置中：关于llm参数的说明如下，作为**kwargs参数传递：
 
@@ -344,7 +345,7 @@ The manager needs llm config if you use auto speaker selection.
 
 ```
 
-# llm_config参数配置（全）
+## llm_config参数配置（全）
 
 在userproxy、assistant、manager之中，都继承ConversableAgent，都含有llm_config参数：
 
@@ -393,9 +394,9 @@ config_list = autogen.filter_config(config_list, filter_dict)
 
 ```
 
-## 其他模型client参数
+### 其他模型client参数
 
-# a_initiate_chat初始对话
+## a_initiate_chat初始对话
 
 同步和异步均类似，这里以异步async为主，不加a_的方法为同步。
 
@@ -447,7 +448,7 @@ chat_result = ChatResult(
 
 ```
 
-## summary_method
+### summary_method
 
 返回的形式：str 或 callable
 
@@ -455,7 +456,7 @@ Str样式：
 
 Supported strings are "last_msg" and "reflection_with_llm"（由llm来进行摘要处理）
 
-## 样例对话：
+### 样例对话：
 
 ```
 await user_proxy.a_initiate_chat(
@@ -468,7 +469,7 @@ await user_proxy.a_initiate_chat(
 
 ```
 
-# a_get_human_input
+## a_get_human_input
 
 在ConversableAgent(LLMAgent)类下面
 
@@ -486,7 +487,7 @@ async def a_get_human_input(self, prompt: str) -> str:
 
 函数的主要部分是 input(prompt)，这是 Python 的内置函数，用于从命令行读取用户的输入。当 input() 函数被调用时，程序运行会暂停，等待用户输入。用户输入的内容将作为字符串返回，并被赋值给 reply 变量。
 
-# run_code
+## run_code
 
 ConversableAgent(LLMAgent)类
 
@@ -496,7 +497,7 @@ def run_code(self, code, **kwargs):
 
 ```
 
-# 文本压缩（新特性）
+## 文本压缩（新特性）
 
 官方主要提供两种解决方法：1.直接调用 LLMLingua进行压缩（免费） 2.将压缩的技能添加到assistant中，然后开启对话（个人对文本token对了方法判断）
 
@@ -590,7 +591,7 @@ print(result.chat_history[1]["content"])
 
 ```
 
-# execute_code
+## execute_code
 
 Docker ：默认运行环境，是完整镜像的配对版本，它与默认镜像拥有一样的系统和包管理工具，但省略许多不常用的依赖，故而它变得很小。但这意味着需要一些不常用的依赖时，需要自己安装。需要有sh python解释器。（atexit为退出镜像）
 
@@ -616,7 +617,7 @@ user_proxy = autogen.UserProxyAgent(
 
 ```
 
-# 轮数参数对比
+## 轮数参数对比
 
 `max_consecutive_auto_reply` vs `max_turn` vs `max_round`
 
@@ -626,7 +627,7 @@ user_proxy = autogen.UserProxyAgent(
 
 `max_round` （GroupChat) ： 指定群聊会话中的最大轮数。默认为None,那么对话会在terminate结束
 
-# 获取每轮对话与全部对话
+## 获取每轮对话与全部对话
 
 ```
 re = user_proxy.initiate_chat(
@@ -646,7 +647,7 @@ print(user_proxy.last_message(assistant)) # 只输出最后一次assistant的内
 
 ```
 
-# 回复终止对话
+## 回复终止对话
 
 AutoGen自动知道停止向LLM发送更多的信息，写在系统提示词：When you are satisfied that the task is complete, reply with 'TERMINATE'.。当LLM返回TERMINATE代表结束。
 
@@ -662,7 +663,7 @@ is_termination_msg：自定义函数，例如包含单词就终止
 
 ![](https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250413225237348.png)
 
-# Github中重要issue
+## Github中重要issue
 
 1、GroupChat history message 【已解决，利用resuming groupchat新特性】之前先send信息作为记录保存
 
