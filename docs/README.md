@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250803172711642.png
-heroText: Jacin   ME
-tagline: 世上本无路，走的人多了，便成了路。
+heroText: JACIN ME
+tagline: DO WHAT YOU WANT
 actions:
   - text: 开始阅读 →
     link: /articles/
