@@ -1,10 +1,13 @@
-# 介绍
+# 目录
+[[toc]]
+
+## 介绍
 
 开源地址： https://github.com/tadata-org/fastapi_mcp
 
 FastAPI-MCP 是一个开源项目，旨在简化 FastAPI 应用与现代 AI 代理（如基于大语言模型的系统）之间的集成。它通过自动将 FastAPI 的所有 API 端点暴露为符合 Model Context Protocol（MCP）标准的工具，使得 AI 代理能够直接调用和理解这些接口，整个过程无需额外配置，极大地降低了开发者的集成难度。
 
-## **主要功能**
+### **主要功能**
 
 - **零配置自动化**：无需手动配置，FastAPI-MCP 会自动发现 FastAPI 应用中的所有端点，并将它们转换为 MCP 工具。
 - **直接集成**：可以将 MCP 服务器直接挂载到现有的 FastAPI 应用中，或者选择单独部署 MCP 服务器，灵活适应不同架构需求。
@@ -19,7 +22,7 @@ FastAPI-MCP 是一个开源项目，旨在简化 FastAPI 应用与现代 AI 代�
     - 所有路由必须要有 operation_id
     - 接口请求/响应最好都带 description、summary
 
-# 运行说明
+## 运行说明
 
 服务端：
 
@@ -98,16 +101,16 @@ client.call_operation("get_item", {"item_id": 123})
 | 和路由无关 | 和 @app.post("/path") 的路径、函数名都可无关 |
 | 对接必须有 | MCP、Coze、千问等大模型调用你接口时就靠它识别 |
 
-# 拆解MCP
+## 拆解MCP
 
 这个 MCPClient 究竟干了什么，以及 MCP 协议到底是个“什么鬼”——为什么它虽然走的还是 HTTP，却变成了大模型通用对接的标准。
 
-## **✅ 本质还是 HTTP，但它封装了调用协议 + 结构化文档 + 标准化调用方式**
+### **✅ 本质还是 HTTP，但它封装了调用协议 + 结构化文档 + 标准化调用方式**
 
 > MCP（Model Context Protocol）不是新协议，而是为大模型定制的 OpenAPI 子集标准，让模型能「看得懂、调得对、调得稳」你的接口。
 > 
 
-### **✅ 1. HTTP 是传输协议（干活的快递员）**
+#### **✅ 1. HTTP 是传输协议（干活的快递员）**
 
 - 确实所有请求最终走的都是 HTTP，比如：
 
@@ -116,7 +119,7 @@ POST /mcp/get_item
 Body: {"item_id": 123}
 ```
 
-### **✅ 2. OpenAPI 是接口描述文档（接口说明书）**
+#### **✅ 2. OpenAPI 是接口描述文档（接口说明书）**
 
 - 帮助工具了解你这个接口长什么样：
     - 接口路径
@@ -124,14 +127,14 @@ Body: {"item_id": 123}
     - 响应结构
     - operation_id
 
-### **✅ 3. MCP 是大模型「能读懂」的 OpenAPI 子集标准**
+#### **✅ 3. MCP 是大模型「能读懂」的 OpenAPI 子集标准**
 
 - 它是为大模型设计的接口文档格式，比如：
     - 增加了 x-modelcontext 扩展字段
     - 精简了 OpenAPI 的复杂内容
     - 强调每个接口都要 operation_id、description、参数结构清晰
 
-### **✅ MCPClient就是个“模拟大模型”的客户端**
+#### **✅ MCPClient就是个“模拟大模型”的客户端**
 
 ```python
 async with MCPClient("http://localhost:8000/mcp") as client:
@@ -228,7 +231,7 @@ mcp_result = requests.post(f"http://localhost:8000/mcp/{func_name}", json=args)
 print("🟢 MCP 响应：", mcp_result.json())
 ```
 
-### **❓现在有没有一个“完全自动化 MCP 接口调用”的服务？**
+#### **❓现在有没有一个“完全自动化 MCP 接口调用”的服务？**
 
 **结论：**
 
@@ -249,7 +252,7 @@ print("🟢 MCP 响应：", mcp_result.json())
 你 = Tool Executor（工具执行者）
 ```
 
-## **✅ 那有没有“自动 MCP 执行”的系统？**
+### **✅ 那有没有“自动 MCP 执行”的系统？**
 
 | **系统/平台** | **是否支持自动调用** | **说明** |
 | --- | --- | --- |

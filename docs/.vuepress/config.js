@@ -21,7 +21,7 @@ module.exports = {
       // 2. 新的 TOC 插件，忽略容器深度，直接收集 1–3 级标题
       md.use(require('markdown-it-toc-done-right'), {
         // 收集哪几级标题
-        level: [1, 2, 3],
+        level: [1, 2, 3,4,5],
         // 插入点标记，保持 [[toc]]
         placeholder: '[[toc]]',
         // 可选：渲染成 ul 还是 ol
