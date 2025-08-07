@@ -105,7 +105,72 @@ module.exports = {
         }
       ],
       "/articles/": [
-        
+        {
+          "text": "网络",
+          "link": "/articles/网络/",
+          "children": [
+            {
+              "text":"BBR网络介绍与使用",
+              "link": "/articles/网络/bbr算法介绍.md"
+            },
+            {
+              "text":"双ISP",
+              "link": "/articles/网络/双ISP.md"
+            },
+            {
+              "text":"cloudflare证书",
+              "link": "/articles/网络/cloudflare证书.md"
+            },
+            {
+              "text": "网络https协议",
+              "link": "/articles/网络/2025-01-09-网络https协议.md"
+            },
+            {
+              "text": "SSL证书与CA证书",
+              "link": "/articles/网络/2025-01-10-SSL证书与CA证书.md"
+            },
+            {
+              "text": "5G-A技术",
+              "link": "/articles/网络/2025-03-05-5G-A技术.md"
+            },
+            {
+              "text": "CORS与OPTIONS请求",
+              "link": "/articles/网络/2025-03-10-CORS与OPTIONS请求.md"
+            },
+            {
+              "text": "跨站请求",
+              "link": "/articles/网络/2025-03-20-跨站请求.md"
+            },
+            {
+              "text": "点击劫持",
+              "link": "/articles/网络/2025-03-21-点击劫持.md"
+            },
+            {
+              "text": "cdn 是什么？",
+              "link": "/articles/网络/2025-04-23-cdn 是什么？.md"
+            },
+            {
+              "text": "\"阿里云差点被‘劫持’？你必须懂的 DNS 知识",
+              "link": "/articles/网络/2025-06-08-\"阿里云差点被‘劫持’？你必须懂的 DNS 知识.md"
+            },
+            {
+              "text": "gRPC 相关介绍",
+              "link": "/articles/网络/2025-06-10-gRPC 相关介绍.md"
+            },
+            {
+              "text": "gRPC 使用",
+              "link": "/articles/网络/2025-06-11-gRPC 使用.md"
+            },
+            {
+              "text": "精品网络解析",
+              "link": "/articles/网络/2025-06-20-精品网络解析.md"
+            },
+            {
+              "text": "README",
+              "link": "/articles/网络/README.md"
+            }
+          ]
+        },
         {
           "text": "Git",
           "link": "/articles/Git/",
@@ -390,68 +455,7 @@ module.exports = {
             }
           ]
         },
-        {
-          "text": "网络",
-          "link": "/articles/网络/",
-          "children": [
-            {
-              "text":"双ISP",
-              "link": "/articles/网络/双ISP.md"
-            },
-            {
-              "text":"cloudflare证书",
-              "link": "/articles/网络/cloudflare证书.md"
-            },
-            {
-              "text": "网络https协议",
-              "link": "/articles/网络/2025-01-09-网络https协议.md"
-            },
-            {
-              "text": "SSL证书与CA证书",
-              "link": "/articles/网络/2025-01-10-SSL证书与CA证书.md"
-            },
-            {
-              "text": "5G-A技术",
-              "link": "/articles/网络/2025-03-05-5G-A技术.md"
-            },
-            {
-              "text": "CORS与OPTIONS请求",
-              "link": "/articles/网络/2025-03-10-CORS与OPTIONS请求.md"
-            },
-            {
-              "text": "跨站请求",
-              "link": "/articles/网络/2025-03-20-跨站请求.md"
-            },
-            {
-              "text": "点击劫持",
-              "link": "/articles/网络/2025-03-21-点击劫持.md"
-            },
-            {
-              "text": "cdn 是什么？",
-              "link": "/articles/网络/2025-04-23-cdn 是什么？.md"
-            },
-            {
-              "text": "\"阿里云差点被‘劫持’？你必须懂的 DNS 知识",
-              "link": "/articles/网络/2025-06-08-\"阿里云差点被‘劫持’？你必须懂的 DNS 知识.md"
-            },
-            {
-              "text": "gRPC 相关介绍",
-              "link": "/articles/网络/2025-06-10-gRPC 相关介绍.md"
-            },
-            {
-              "text": "gRPC 使用",
-              "link": "/articles/网络/2025-06-11-gRPC 使用.md"
-            },
-            {
-              "text": "精品网络解析",
-              "link": "/articles/网络/2025-06-20-精品网络解析.md"
-            },
-            {
-              "text": "README",
-              "link": "/articles/网络/README.md"
-            }
-          ]
-        },
+        
         {
           "text": "计算机知识",
           "link": "/articles/计算机知识/",
