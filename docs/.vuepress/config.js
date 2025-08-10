@@ -116,6 +116,10 @@ module.exports = {
             {
               "text":"哪吒面板安装与使用",
               "link": "/articles/vps/哪吒面板安装与使用.md"
+            },
+            {
+              "text":"ICMP与TCPping整理",
+              "link": "/articles/vps/ICMP与TCPping整理.md"
             }
           ]
         },
