@@ -120,6 +120,10 @@ module.exports = {
           "link": "/articles/网络/",
           "children": [
             {
+              "text":"DNS中的ECS",
+              "link": "/articles/网络/DNS中的ECS.md"
+            },
+            {
               "text":"BBR网络介绍与使用",
               "link": "/articles/网络/bbr算法介绍.md"
             },
