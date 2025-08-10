@@ -106,6 +106,16 @@ module.exports = {
       ],
       "/articles/": [
         {
+          "text":"vps",
+          "link": "/articles/vps/",
+          "children": [
+            {
+              "text":"哪吒面板安装与使用",
+              "link": "/articles/vps/哪吒面板安装与使用.md"
+            }
+          ]
+        },
+        {
           "text": "网络",
           "link": "/articles/网络/",
           "children": [
