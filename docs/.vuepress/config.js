@@ -91,7 +91,7 @@ module.exports = {
           "children": [
             {
               "text":"GPT-5最强模型?",
-              "link": "/AI/openai/GPT-5最强模型?.md"
+              "link": "/AI/openai/GPT-5最强模型.md"
             },
             {
               "text": "202508-GPT模型选择与降智测试",

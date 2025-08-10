@@ -65,10 +65,10 @@ ECS 会在 DNS 查询时，在 EDNS 的 **OPT RR** 里加一个 **Client Subnet*
 dig +subnet=<IP>/<PREFIX> <域名> @DNS服务器
 ```
 
-- <IP> → 你想模拟的客户端 IP
-- <PREFIX> → ECS 前缀长度
-- <域名> → 你想查询的域名
-- @DNS服务器 → 使用哪个 DNS 解析（如 8.8.8.8）
+- `<IP>` → 你想模拟的客户端 IP
+- `<PREFIX>` → ECS 前缀长度
+- `<域名>` → 要查询的域名
+- `@DNS服务器` → 指定递归解析器
 
 这里以 [alibaba.com](http://alibaba.com/) 为例，因为他的 解析结果国内不一样，国外是 47.* 开头的。
 
