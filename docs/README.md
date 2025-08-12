@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250803172711642.png
+heroImage: https://public.jacin.me/blog/img/2025/08/a5aaaeb92496a6a4983f430dde8a27e3-1755009851.jpg
 heroText: JACIN ME
 tagline: DO WHAT YOU WANT
 actions:

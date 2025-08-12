@@ -360,6 +360,10 @@ module.exports = {
           "link": "/articles/工具使用/",
           "children": [
             {
+              "text":"picgo配置cloudflare-r2",
+              "link": "/articles/工具使用/picgo配置cloudflare-r2.md"
+            },
+            {
               "text": "picgo配置",
               "link": "/articles/工具使用/2025-01-11-picgo配置.md"
             },
