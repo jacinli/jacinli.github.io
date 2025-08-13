@@ -7,10 +7,27 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "https://cdn.jsdelivr.net/gh/jacinli/image-hosting@main/notes/20250803191554812.jpeg",
+        href: "https://public.jacin.me/blog/img/2025/08/1d54b96c8e935107f3cd98b42b61ce40-1755099823.jpeg",
       },
     ],
-
+    // Google Analytics
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-PYMP75E7KX",
+      },
+    ],
+    [
+      "script",
+      {},
+      `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PYMP75E7KX');
+      `,
+    ],
   ],
   base: "/",
   serviceWorker: true,
