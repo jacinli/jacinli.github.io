@@ -11,22 +11,32 @@ module.exports = {
       },
     ],
     // Google Analytics
+//    [
+//      "script",
+//      {
+//        async: true,
+//        src: "https://www.googletagmanager.com/gtag/js?id=G-PYMP75E7KX",
+//      },
+//    ],
+//    [
+//      "script",
+//      {},
+//      `
+//        window.dataLayer = window.dataLayer || [];
+//        function gtag(){dataLayer.push(arguments);}
+//        gtag('js', new Date());
+//        gtag('config', 'G-PYMP75E7KX');
+//      `,
+//    ],
+// Umami
     [
       "script",
       {
         async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=G-PYMP75E7KX",
+        src: "https://da.jacin.me/script.js",
+        "data-website-id": "2b34f680-5652-4316-bc25-d142fce46eaf",  // 从 Umami 面板获取
+        "data-domains": "jacin.me"                 // 可选
       },
-    ],
-    [
-      "script",
-      {},
-      `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-PYMP75E7KX');
-      `,
     ],
   ],
   base: "/",
