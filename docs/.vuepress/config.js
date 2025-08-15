@@ -141,6 +141,10 @@ module.exports = {
           "link": "/articles/vps/",
           "children": [
             {
+              "text": "自动续签ssl证书",
+              "link": "/articles/vps/自动续签ssl证书.md"
+            },
+            {
               "text":"哪吒面板安装与使用",
               "link": "/articles/vps/哪吒面板安装与使用.md"
             },
