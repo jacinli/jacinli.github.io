@@ -485,6 +485,10 @@ module.exports = {
           "link": "/articles/消息队列/",
           "children": [
             {
+              "text":"rocketmq基本概念",
+              "link": "/articles/消息队列/rocketmq基本概念.md" 
+            },
+            {
               "text": "rocketmq 配置环境[python]",
               "link": "/articles/消息队列/2025-05-01-rocketmq 配置环境[python].md"
             }
