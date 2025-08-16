@@ -145,6 +145,10 @@ module.exports = {
           "link": "/articles/vps/",
           "children": [
             {
+              "text":"搭建minio与配置cdn",
+              "link": "/articles/vps/搭建minio与配置cdn.md"
+            },
+            {
               "text": "自动续签ssl证书",
               "link": "/articles/vps/自动续签ssl证书.md"
             },
