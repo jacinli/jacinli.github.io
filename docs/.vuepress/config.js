@@ -399,6 +399,10 @@ module.exports = {
           "link": "/articles/工具使用/",
           "children": [
             {
+              "text":"常用链接下载地址",
+              "link": "/articles/工具使用/常用链接下载地址.md"
+            },
+            {
               "text":"picgo配置cloudflare-r2",
               "link": "/articles/工具使用/picgo配置cloudflare-r2.md"
             },
