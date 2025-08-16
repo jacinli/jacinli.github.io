@@ -311,6 +311,10 @@ module.exports = {
           "link": "/articles/python/",
           "children": [
             {
+              "text":"s3上传文件sdk",
+              "link": "/articles/python/s3上传文件sdk.md"
+            },
+            {
               "text": "pythonImport解析",
               "link": "/articles/python/2024-06-23-pythonImport解析.md"
             },
@@ -398,6 +402,10 @@ module.exports = {
           "text": "工具使用",
           "link": "/articles/工具使用/",
           "children": [
+            {
+              "text":"minio使用",
+              "link": "/articles/工具使用/minio使用.md"
+            },
             {
               "text":"常用链接下载地址",
               "link": "/articles/工具使用/常用链接下载地址.md"
