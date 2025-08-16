@@ -117,6 +117,10 @@ module.exports = {
           "link": "/AI/openai/",
           "children": [
             {
+              "text":"类openai基本对话代码",
+              "link": "/AI/openai/类openai基本对话代码.md"
+            },
+            {
               "text":"GPT-5最强模型?",
               "link": "/AI/openai/GPT-5最强模型.md"
             },
