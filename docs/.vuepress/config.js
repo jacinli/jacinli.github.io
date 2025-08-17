@@ -562,6 +562,10 @@ module.exports = {
           "link": "/articles/音视频/",
           "children": [
             {
+              "text":"谷歌tts流式生成",
+              "link": "/articles/音视频/谷歌tts流式生成.md"
+            },
+            {
               "text":"谷歌tts使用与一次性生成sdk",
               "link": "/articles/音视频/谷歌tts使用与一次性生成sdk.md"
             },
