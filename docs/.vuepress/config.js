@@ -562,6 +562,10 @@ module.exports = {
           "link": "/articles/音视频/",
           "children": [
             {
+              "text":"谷歌tts使用与一次性生成sdk",
+              "link": "/articles/音视频/谷歌tts使用与一次性生成sdk.md"
+            },
+            {
               "text": "rtmp协议解析 1",
               "link": "/articles/音视频/2025-04-07-rtmp协议解析 1.md"
             }
