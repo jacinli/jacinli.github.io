@@ -149,6 +149,10 @@ module.exports = {
               "link": "/articles/vps/搭建minio与配置cdn.md"
             },
             {
+              "text":"rclone-webui使用与配置",
+              "link": "/articles/vps/rclone-webui使用与配置.md"
+            },
+            {
               "text": "自动续签ssl证书",
               "link": "/articles/vps/自动续签ssl证书.md"
             },
