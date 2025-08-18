@@ -29,15 +29,15 @@ module.exports = {
 //      `,
 //    ],
 // Umami
-    [
-      "script",
-      {
-        async: true,
-        src: "https://da.jacin.me/script.js",
-        "data-website-id": "2b34f680-5652-4316-bc25-d142fce46eaf",  // 从 Umami 面板获取
-        "data-domains": "jacin.me"                 // 可选
-      },
-    ],
+//    [
+//      "script",
+//      {
+//        async: true,
+//        src: "https://da.jacin.me/script.js",
+//        "data-website-id": "2b34f680-5652-4316-bc25-d142fce46eaf",  // 从 Umami 面板获取
+//        "data-domains": "jacin.me"                 // 可选
+//      },
+//    ],
   ],
   base: "/",
   serviceWorker: true,
