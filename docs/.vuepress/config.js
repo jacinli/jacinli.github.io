@@ -117,6 +117,10 @@ module.exports = {
           "link": "/AI/openai/",
           "children": [
             {
+              "text":"多段AI记忆拼接与上下文压缩(初步)",
+              "link": "/AI/openai/多段AI记忆拼接与上下文压缩(初步).md"
+            },
+            {
               "text":"类openai基本对话代码",
               "link": "/AI/openai/类openai基本对话代码.md"
             },
