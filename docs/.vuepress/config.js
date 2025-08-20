@@ -467,6 +467,10 @@ module.exports = {
           "link": "/articles/数据库/",
           "children": [
             {
+              "text":"redis-发布与订阅机制-1",
+              "link": "/articles/数据库/redis-发布与订阅机制-1.md"
+            },
+            {
               "text": "Alembic使用",
               "link": "/articles/数据库/2024-09-30-Alembic使用.md"
             },
